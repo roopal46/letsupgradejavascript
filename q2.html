@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>JavaScript Array Methods</h2>
+
+    <h2>1. toString() method</h2>
+
+    <p>The toString() method returns an array as a comma separated string:</p>
+
+    <p id="demo"></p>
+
+    <h2>2.join()</h2>
+
+    <p>The join() method joins array elements into a string.</p>
+
+    <p>In this example we have used "," as a separator between the elements:</p>
+
+    <p id="demo1"></p>
+
+    <h2>3.pop()</h2>
+
+    <p>The pop() method removes the last element from an array.</p>
+
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+
+    <h2>4.push()</h2>
+
+    <p>The push() method appends a new element to an array.</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo5"></p>
+
+    <h2>5.shift()</h2>
+
+    <p>The shift() method removes the first element of an array (and "shifts" all other elements to the left):</p>
+
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+
+    <h2>JavaScript String Methods</h2>
+    <h2>1. search() method</h2>
+    
+    <p>The search() method returns the position of the first occurrence of a specified text in a string:</p>
+    
+    <p id="demo7"></p>
+    
+    <h2>1. replace() method</h2>
+    <p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+
+    <button onclick="myFunction1()">Try it</button>
+
+    <p id="demo">Please visit Microsoft!</p>
+
+    <script>
+        let fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo").innerHTML = fruits.toString();
+
+        ruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo1").innerHTML = fruits.join(" , ");
+
+        fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo3").innerHTML = fruits;
+        fruits.pop();
+        document.getElementById("demo4").innerHTML = fruits;
+
+        fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo").innerHTML = fruits;
+
+        function myFunction() {
+            fruits.push("Kiwi");
+            document.getElementById("demo5").innerHTML = fruits;
+        }
+
+        fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo5").innerHTML = fruits;
+        fruits.shift();
+        document.getElementById("demo6").innerHTML = fruits;
+
+        var str = "Please locate where 'locate' occurs!";
+        var pos = str.search("locate");
+        document.getElementById("demo7").innerHTML = pos;
+
+        function myFunction1() {
+            var str = document.getElementById("demo8").innerHTML;
+            var txt = str.replace("Microsoft", "W3Schools");
+            document.getElementById("demo8").innerHTML = txt;
+        }
+    </script>
+
+</body>
+
+</html>
