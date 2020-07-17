@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVEN OR ODD</title>
+</head>
+<body>
+    <div>
+        ENTER AN INTEGER VALUE:
+        <input type="text" name="value" id="i1"/>
+        <br>
+        <input type="submit" value="SUBMIT" onclick="isEve()"/>
+    </div>
+    <script>
+        function isEve(){
+            let x=document.getElementById("i1").value;
+            if(x%2==0)
+            {
+                console.log(`THE NUMBER ENTERED IS ${x} AND NUMBER IS EVEN`);
+            }
+            else
+            {
+                console.log(`THE NUMBER ENTERED IS ${x} AND NUMBER IS ODD`);
+            }
+        }
+    </script>
+</body>
+</html>

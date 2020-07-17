@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Android version</title>
+</head>
+<body>
+    <div>
+        ENTER OS NAME AND VERSION SEPERATED BY SPACE:
+        <input type="text" name="value" id="i1"/>
+        <br>
+        <input type="submit" value="SUBMIT" onclick="Android()"/>
+    </div>
+    <script>
+        function Android(){
+            let a=document.getElementById("i1").value;
+            let arr=a.split(' ');
+            console.log(`THE OS NAME IS ${arr[0]} AND VERSION IS ${arr[1]}`);
+        }
+    </script>
+</body>
+</html>

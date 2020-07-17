@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARKS GRADING</title>
+</head>
+
+<body>
+    <div>
+        ENTER YOUR MARKS HERE OUT OF 100
+        <input type="text" name="" id="m1" />
+        <input type="submit" value="SHOW GRADES IF-ELSE" onclick="Grade()" />
+        <input type="submit" value="SHOW GRADES TERNARY" onclick="Grade1()" />
+    </div>
+    <script>
+        function Grade() {
+            let x = document.getElementById("m1").value;
+            if (x <= 40) {
+                document.write(`MARKS ARE ${x} AND GRADE IS C.`)
+            }
+            else {
+                if (x > 40 && x < 51) {
+                    document.write(`MARKS ARE ${x} AND GRADE IS B.`)
+                }
+                else {
+                    if (x > 51) {
+                        document.write(`MARKS ARE ${x} AND GRADE IS A`);
+                    }
+                }
+            }
+        }
+
+        function Grade1()
+        {
+            let x=document.getElementById("m1").value;
+            x>50 ? document.write(`MARKS ARE ${x} AND GRADE IS A`) : document.write(`MARKS ARE ${x} AND GRADE IS B`); 
+        }
+
+    </script>
+</body>
+
+</html>
